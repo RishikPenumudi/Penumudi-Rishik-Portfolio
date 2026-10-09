@@ -3,3 +3,21 @@
 @media(max-width:900px){.nav-links{gap:13px}.nav-links a{font-size:10px}.hero{grid-template-columns:1fr;gap:0;padding-top:60px}.hero-copy{max-width:700px}.hero-visual{height:350px;margin-top:15px}.orbit-a{width:280px;height:280px}.orbit-b{width:350px}.hero-core{width:175px;height:175px}.core-symbol{font-size:68px}.card-sih{left:8%}.card-data{right:8%}.card-build{left:13%}.section-head{align-items:start;flex-direction:column;gap:10px}.section-intro{max-width:650px}.proof-strip{margin-left:20px;margin-right:20px}}
 @media(max-width:650px){.nav{height:66px;padding:0 18px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:65px;left:0;right:0;background:#0c1527;padding:18px;flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line)}.nav-links.open{display:flex}.nav-links a{font-size:13px;padding:8px}.section{padding-left:19px;padding-right:19px}.hero{padding-top:45px;padding-bottom:30px;min-height:auto}.hero h1{font-size:46px}.hero-lede{font-size:13px}.hero-visual{height:320px;transform:scale(.9);margin-left:-10px;margin-right:-10px}.float-card{padding:10px}.card-sih{left:0}.card-data{right:0}.card-build{left:3%}.proof-strip{grid-template-columns:1fr 1fr;row-gap:15px;padding:18px;margin:0 14px}.proof-strip>div:nth-child(2){border:0}.proof-strip strong{font-size:20px}.section-pad{padding-top:58px;padding-bottom:45px}.about-grid,.project-grid,.case-grid,.achievement-grid,.skills-grid,.cert-list{grid-template-columns:1fr}.featured{grid-row:auto}.featured .project-art{height:200px}.project-art{height:150px}.about-main{padding:22px}.control-flow{padding:14px 10px;gap:7px}.control-flow b{font-size:11px}.control-flow span{font-size:8px}.control-flow>i{font-size:12px}.case-panel{padding:20px}.contact-card{padding:40px 18px}.contact-details{flex-direction:column;gap:8px}.footer{padding:20px;gap:13px;flex-wrap:wrap}.footer>span{order:3;width:100%}.cert-item{padding:12px}.hero-meta{gap:10px}.button{padding:12px 14px}.social-links{flex-wrap:wrap}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+
+/* Real SAHAJ prototype photography */
+.sahaj-photo-art{height:235px!important;background:#e9e5dc;position:relative;overflow:hidden;border-radius:11px;border:1px solid rgba(142,180,226,.16)}
+.sahaj-photo-art img{width:100%;height:100%;object-fit:cover;object-position:center 47%;display:block;transition:transform .45s ease}
+.project-card:hover .sahaj-photo-art img{transform:scale(1.035)}
+.photo-chip{position:absolute;left:12px;bottom:12px;padding:7px 10px;border-radius:7px;background:rgba(7,15,27,.82);backdrop-filter:blur(8px);color:#d7f8f2;font:8px var(--mono);letter-spacing:.1em;border:1px solid rgba(255,255,255,.18)}
+.sahaj-gallery{display:grid;grid-template-columns:1.15fr .85fr;gap:15px;margin:28px 0 18px;align-items:stretch}
+.sahaj-photo{position:relative;min-width:0;min-height:280px;margin:0;overflow:hidden;border-radius:16px;background:#e8e4dc;border:1px solid var(--line)}
+.sahaj-photo img{display:block;width:100%;height:100%;min-height:280px;object-fit:cover;transition:transform .5s ease}
+.sahaj-photo:hover img{transform:scale(1.025)}
+.sahaj-photo-primary img{object-position:center 48%}.sahaj-photo-secondary img{object-position:center 50%}
+.sahaj-photo figcaption{position:absolute;left:0;right:0;bottom:0;padding:36px 18px 17px;background:linear-gradient(transparent,rgba(5,12,22,.92));display:flex;flex-direction:column;gap:5px}
+.sahaj-photo figcaption span{font:8px var(--mono);letter-spacing:.13em;color:#7de6d7}.sahaj-photo figcaption b{font-size:13px;line-height:1.5;color:#f4f7fc}
+.sahaj-spec-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:0 0 25px}
+.sahaj-spec-row>div{position:relative;padding:17px 15px 15px 44px;border:1px solid var(--line);border-radius:12px;background:rgba(16,26,45,.62);display:flex;flex-direction:column;gap:4px}
+.spec-index{position:absolute;left:14px;top:17px;color:var(--cyan);font:9px var(--mono)}
+.sahaj-spec-row b{font-size:11px}.sahaj-spec-row small{font-size:9px;color:var(--muted);line-height:1.6}
+@media(max-width:650px){.sahaj-gallery{grid-template-columns:1fr}.sahaj-photo,.sahaj-photo img{min-height:220px}.sahaj-spec-row{grid-template-columns:1fr}.sahaj-photo-art{height:200px!important}}
