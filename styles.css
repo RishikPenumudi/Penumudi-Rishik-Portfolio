@@ -491,46 +491,102 @@ ul, ol {
   gap: 6px;
 }
 
-/* --- Hero Command Center Visual --- */
-.hero-card-deck {
-  background-color: var(--bg-surface);
+/* --- Streamlined Command Dock (Lightweight & Sorted) --- */
+.hero-command-dock {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+  padding: 10px 14px;
+  background-color: #FFFFFF;
   border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-xl);
-  padding: 32px;
-  box-shadow: var(--shadow-xl);
-  position: relative;
-  overflow: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
 }
 
-.hero-card-deck::before {
+.dock-label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  margin-right: 4px;
+}
+
+.dock-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 11px;
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.dock-pill svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.dock-pill:hover {
+  background-color: var(--bg-accent-subtle);
+  border-color: var(--border-accent);
+  color: var(--accent-primary);
+  transform: translateY(-1px);
+}
+
+.dock-pill.pill-primary {
+  background-color: var(--bg-accent-subtle);
+  color: var(--accent-primary);
+  border-color: var(--border-accent);
+}
+
+/* --- Refined Hero Preview Card (Sorted & Clean) --- */
+.hero-preview-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 28px;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+}
+
+.hero-preview-card::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 4px;
+  height: 3px;
   background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
 }
 
-.deck-header {
+.preview-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 24px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
   border-bottom: 1px solid var(--border-subtle);
 }
 
-.deck-profile {
+.preview-profile {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
 }
 
-.deck-avatar {
-  width: 56px;
-  height: 56px;
-  border-radius: var(--radius-lg);
+.preview-avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: var(--radius-md);
   background: linear-gradient(135deg, #0F172A, #1E293B);
   color: #FFFFFF;
   display: flex;
@@ -538,132 +594,81 @@ ul, ol {
   justify-content: center;
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: 1.5rem;
-  box-shadow: var(--shadow-md);
-  position: relative;
+  font-size: 1.25rem;
 }
 
-.deck-avatar span {
+.preview-avatar span {
   color: #60A5FA;
 }
 
-.deck-title h3 {
-  font-size: 1.125rem;
+.preview-info h3 {
+  font-size: 1rem;
   font-weight: 700;
+  color: var(--text-primary);
+}
+
+.preview-info p {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.preview-badge {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: #065F46;
+  background-color: var(--bg-emerald-subtle);
+  border: 1px solid #A7F3D0;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+
+.preview-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.preview-metric {
+  text-align: center;
+  padding: 10px 4px;
+  background-color: var(--bg-subtle);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+}
+
+.preview-metric strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 800;
   color: var(--text-primary);
   line-height: 1.2;
 }
 
-.deck-title p {
-  font-size: 0.8125rem;
-  color: var(--text-muted);
-  margin-top: 2px;
-}
-
-.deck-status-tag {
-  font-family: var(--font-mono);
-  font-size: 0.6875rem;
-  font-weight: 700;
-  color: var(--accent-primary);
-  background-color: var(--bg-accent-subtle);
-  padding: 5px 10px;
-  border-radius: var(--radius-full);
-  border: 1px solid var(--border-accent);
-}
-
-.deck-focus-label {
-  font-family: var(--font-mono);
-  font-size: 0.6875rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  margin-bottom: 12px;
-}
-
-.deck-focus-items {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-bottom: 24px;
-}
-
-.deck-focus-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  padding: 12px 14px;
-  background-color: var(--bg-subtle);
-  border-radius: var(--radius-md);
-  border: 1px solid transparent;
-  transition: all var(--transition-fast);
-}
-
-.deck-focus-item:hover {
-  background-color: #FFFFFF;
-  border-color: var(--border-subtle);
-  box-shadow: var(--shadow-sm);
-  transform: translateX(4px);
-}
-
-.focus-num {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--accent-primary);
-  padding-top: 1px;
-}
-
-.focus-content h4 {
-  font-size: 0.875rem;
-  font-weight: 700;
-  color: var(--text-primary);
-}
-
-.focus-content p {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  margin-top: 2px;
-}
-
-.deck-metrics-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-  padding-top: 20px;
-  border-top: 1px solid var(--border-subtle);
-}
-
-.deck-metric-box {
-  padding: 14px;
-  border-radius: var(--radius-md);
-  background-color: var(--bg-subtle);
-  border: 1px solid var(--border-subtle);
-  text-align: center;
-}
-
-.deck-metric-box strong {
+.preview-metric small {
   display: block;
-  font-family: var(--font-display);
-  font-size: 1.375rem;
-  font-weight: 800;
-  color: var(--text-primary);
-  letter-spacing: -0.03em;
-}
-
-.deck-metric-box strong span {
-  font-size: 0.875rem;
-  color: var(--accent-primary);
-}
-
-.deck-metric-box small {
-  display: block;
-  font-size: 0.6875rem;
+  font-size: 0.625rem;
   color: var(--text-muted);
   font-weight: 600;
-  margin-top: 2px;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  margin-top: 2px;
+}
+
+.preview-highlight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: var(--bg-subtle);
+  border-radius: var(--radius-md);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.preview-highlight strong {
+  color: var(--text-primary);
 }
 
 /* --- Social & Professional Profiles Dashboard --- */
@@ -2592,5 +2597,25 @@ ul, ol {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+
+/* Extra Mobile polish for Command Dock & Preview Card */
+@media (max-width: 480px) {
+  .hero-command-dock {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+  }
+  .dock-label {
+    margin-bottom: 4px;
+  }
+  .dock-pill {
+    justify-content: center;
+    width: 100%;
+  }
+  .preview-metrics {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

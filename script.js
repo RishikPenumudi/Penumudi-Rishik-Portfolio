@@ -175,6 +175,69 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       `
     },
+        'stock-pipeline': {
+      title: 'Real-Time Stock Market Data Pipeline — Architecture',
+      html: `
+        <div style="line-height: 1.75; color: var(--text-secondary);">
+          <div style="display:flex; align-items:center; gap:10px; margin-bottom: 20px;">
+            <span style="font-family:var(--font-mono); font-size:0.75rem; font-weight:700; color:var(--accent-primary); background:var(--bg-accent-subtle); padding:4px 10px; border-radius:4px;">PYTHON · KAFKA · SPARK</span>
+            <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted);">POSTGRESQL</span>
+          </div>
+
+          <h4 style="font-size:1.125rem; font-weight:700; color:var(--text-primary); margin-bottom:8px;">1. Project Overview</h4>
+          <p style="margin-bottom:16px;">Designed a distributed data pipeline capable of ingesting financial market ticker data via REST APIs, buffering stream spikes through Apache Kafka topics, transforming moving average metrics using Apache Spark, and writing to PostgreSQL for real-time analytics.</p>
+
+          <h4 style="font-size:1.125rem; font-weight:700; color:var(--text-primary); margin-bottom:8px;">2. Data Architecture</h4>
+          <ul style="list-style:disc; margin-left:20px; margin-bottom:16px; font-size:0.9rem;">
+            <li><strong>Producer Service:</strong> Python async daemon polling market price APIs and publishing partitioned Kafka events.</li>
+            <li><strong>Message Broker:</strong> Multi-partition Apache Kafka cluster ensuring decoupled fault tolerance.</li>
+            <li><strong>Stream Processor:</strong> Apache Spark streaming job computing 5-minute rolling averages and volume spikes.</li>
+            <li><strong>Database:</strong> PostgreSQL with partition tables for fast analytical time-series querying.</li>
+          </ul>
+        </div>
+      `
+    },
+    'foodlink': {
+      title: 'FoodLink — Food Waste Management & Donation Platform',
+      html: `
+        <div style="line-height: 1.75; color: var(--text-secondary);">
+          <div style="display:flex; align-items:center; gap:10px; margin-bottom: 20px;">
+            <span style="font-family:var(--font-mono); font-size:0.75rem; font-weight:700; color:var(--accent-primary); background:var(--bg-accent-subtle); padding:4px 10px; border-radius:4px;">REACT · SPRING BOOT · REST</span>
+            <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted);">SUSTAINABILITY · UN SDG 2 & 12</span>
+          </div>
+
+          <h4 style="font-size:1.125rem; font-weight:700; color:var(--text-primary); margin-bottom:8px;">1. Core Purpose</h4>
+          <p style="margin-bottom:16px;">Bridges commercial food surplus (hostels, cafeterias, event banquet halls) with local non-profit shelter networks, cutting down landfill methane while feeding vulnerable communities.</p>
+
+          <h4 style="font-size:1.125rem; font-weight:700; color:var(--text-primary); margin-bottom:8px;">2. System Features</h4>
+          <ul style="list-style:disc; margin-left:20px; margin-bottom:16px; font-size:0.9rem;">
+            <li><strong>Real-time Food Listings:</strong> Donors post available food batches with cooked timestamps, dietary categories, and shelf-life expiry countdowns.</li>
+            <li><strong>Logistics Dispatch:</strong> Push notifications alert nearby verified NGOs to accept and schedule direct pickup.</li>
+            <li><strong>Impact Tracking:</strong> Automated dashboard tracking cumulative kilograms of food rescued and estimated carbon emissions prevented.</li>
+          </ul>
+        </div>
+      `
+    },
+    'campus-analytics': {
+      title: 'Smart Campus Analytics — Academic & Placement Forecasting',
+      html: `
+        <div style="line-height: 1.75; color: var(--text-secondary);">
+          <div style="display:flex; align-items:center; gap:10px; margin-bottom: 20px;">
+            <span style="font-family:var(--font-mono); font-size:0.75rem; font-weight:700; color:var(--accent-primary); background:var(--bg-accent-subtle); padding:4px 10px; border-radius:4px;">PYTHON · POSTGRESQL · ML</span>
+          </div>
+
+          <h4 style="font-size:1.125rem; font-weight:700; color:var(--text-primary); margin-bottom:8px;">1. Problem Solved</h4>
+          <p style="margin-bottom:16px;">Universities maintain disconnected departmental silos: attendance registers, semester exam marks, and campus placement readiness. This solution unifies them into a coherent predictive data pipeline.</p>
+
+          <h4 style="font-size:1.125rem; font-weight:700; color:var(--text-primary); margin-bottom:8px;">2. Technical Implementation</h4>
+          <ul style="list-style:disc; margin-left:20px; margin-bottom:16px; font-size:0.9rem;">
+            <li><strong>Automated ETL Pipeline:</strong> Ingests periodic attendance logs and grades, cleaning inconsistencies via Pandas.</li>
+            <li><strong>Predictive Risk Flagging:</strong> Machine learning classification identifies students at risk of attendance shortages or placement ineligibility weeks before cutoffs.</li>
+            <li><strong>Actionable Insights:</strong> Department faculty receive targeted intervention recommendations rather than reactive end-of-semester penalties.</li>
+          </ul>
+        </div>
+      `
+    },
     'parking': {
       title: 'Smart Parking Management System — Architecture Overview',
       html: `
