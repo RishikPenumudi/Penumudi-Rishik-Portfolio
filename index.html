@@ -3,178 +3,1728 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Rishik Penumudi — Computer Science student, innovator and aspiring entrepreneur.">
-  <meta name="theme-color" content="#f7f9fc">
-  <title>Rishik Penumudi | Portfolio</title>
+  
+  <!-- Primary Meta Tags -->
+  <title>Rishik Penumudi | Developer Portfolio</title>
+  <meta name="title" content="Rishik Penumudi | Developer Portfolio">
+  <meta name="description" content="Explore Rishik Penumudi's projects, technical skills, achievements, innovation journey and experience in software development, AI, data analytics and product building.">
+  <meta name="author" content="Rishik Penumudi">
+  <meta name="theme-color" content="#F8FAFC">
+  <link rel="canonical" href="https://rishikpenumudi.github.io/Penumudi-Rishik-Portfolio/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rishikpenumudi.github.io/Penumudi-Rishik-Portfolio/">
+  <meta property="og:title" content="Rishik Penumudi | Developer Portfolio">
+  <meta property="og:description" content="Explore Rishik Penumudi's projects, technical skills, achievements, innovation journey and experience in software development, AI, data analytics and product building.">
+  <meta property="og:image" content="assets/sahaj-primary.jpg">
+
+  <!-- Twitter Meta Tags -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://rishikpenumudi.github.io/Penumudi-Rishik-Portfolio/">
+  <meta property="twitter:title" content="Rishik Penumudi | Developer Portfolio">
+  <meta property="twitter:description" content="Explore Rishik Penumudi's projects, technical skills, achievements, innovation journey and experience in software development, AI, data analytics and product building.">
+  <meta property="twitter:image" content="assets/sahaj-primary.jpg">
+
+  <!-- Typography: Inter, Plus Jakarta Sans, JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="site-header">
-  <nav class="nav wrap">
-    <a class="brand" href="#home"><span class="brand-mark">R</span> RISHIK PENUMUDI</a>
-    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-    <div class="nav-links">
-      <a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a>
-      <a href="#achievements">Achievements</a><a href="#skills">Skills</a><a href="#certifications">Certifications</a>
-      <a class="nav-contact" href="#contact">Contact ↗</a>
-    </div>
-  </nav>
-</header>
 
-<main id="home">
-  <section class="hero wrap">
-    <div class="hero-copy">
-      <div class="eyebrow"><span class="live-dot"></span> COMPUTER SCIENCE · INNOVATION · PRODUCT THINKING</div>
-      <p class="hello">Hello, I'm</p>
-      <h1>Rishik <span>Penumudi.</span></h1>
-      <h2 class="role-line">Aspiring Entrepreneur <i>·</i> CSE Student <i>·</i> Innovator</h2>
-      <p class="hero-text">I enjoy turning real-world problems into thoughtful products by combining technology, data, design thinking and hands-on experimentation. Currently building <strong>SAHAJ</strong>, a sustainable natural-dye innovation with Team Zyric.</p>
-      <div class="hero-actions">
-        <a class="btn primary" href="#projects">Explore my work <span>↗</span></a>
-        <a class="btn secondary" href="mailto:penumudirishik48@gmail.com">Get in touch</a>
+  <!-- ==================== HEADER & NAVIGATION ==================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Rishik Penumudi Home">
+        <div class="brand-monogram">RP</div>
+        <div class="brand-text">
+          <span class="brand-name">Rishik Penumudi</span>
+          <span class="brand-role">CSE · INNOVATION · PRODUCT</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#sahaj">SAHAJ</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#ai-data">AI & Data</a>
+        <a class="nav-link" href="#achievements">Achievements</a>
+        <a class="nav-link" href="#certifications">Certifications</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-secondary btn-sm" href="assets/Rishik_resume.pdf" download="Rishik_Penumudi_Resume.pdf" target="_blank" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Resume
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
       </div>
-      <div class="profile-dashboard" aria-label="Social and developer profiles">
-        <span class="profile-label">FIND ME ONLINE</span>
-        <a href="https://www.linkedin.com/in/penumudi-rishik-3b1b90368/" target="_blank" rel="noopener">LinkedIn ↗</a>
-        <a href="https://github.com/RishikPenumudi" target="_blank" rel="noopener">GitHub ↗</a>
-        <a href="https://leetcode.com/u/KLU2400030782/" target="_blank" rel="noopener">LeetCode ↗</a>
-        <a href="https://www.codechef.com/users/kl2400030782" target="_blank" rel="noopener">CodeChef ↗</a>
-        <a href="mailto:penumudirishik48@gmail.com">Email ↗</a>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="nav-mobile-menu" id="mobileMenu" aria-label="Mobile Navigation">
+    <a class="mobile-nav-link" href="#home">Home</a>
+    <a class="mobile-nav-link" href="#about">About Me</a>
+    <a class="mobile-nav-link" href="#experience">Experience</a>
+    <a class="mobile-nav-link" href="#sahaj">SAHAJ Innovation</a>
+    <a class="mobile-nav-link" href="#projects">Featured Projects</a>
+    <a class="mobile-nav-link" href="#ai-data">AI & Data Learning</a>
+    <a class="mobile-nav-link" href="#achievements">Achievements</a>
+    <a class="mobile-nav-link" href="#certifications">Certifications</a>
+    <a class="mobile-nav-link" href="#skills">Technical Skills</a>
+    <a class="mobile-nav-link" href="#beyond">Beyond the Code</a>
+    <a class="mobile-nav-link" href="#contact">Contact</a>
+    <div style="margin-top: 20px;">
+      <a class="btn btn-primary" style="width: 100%;" href="assets/Rishik_resume.pdf" download="Rishik_Penumudi_Resume.pdf" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        Download Resume (PDF)
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="section hero-section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-status-pill">
+            <span class="pulse-indicator"></span>
+            <span>COMPUTER SCIENCE ENGINEERING · INNOVATION · PRODUCT BUILDING</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="name-highlight">Rishik Penumudi</span>
+            Building technology with purpose.<br>
+            <span class="impact-phrase">Turning ideas into impact.</span>
+          </h1>
+
+          <p class="hero-desc">
+            Computer Science Engineering student at KL University, pursuing Honors Through Innovation. Interested in software development, AI, data analytics, product innovation and entrepreneurship. Currently exploring how intelligent technology can solve meaningful real-world problems.
+          </p>
+
+          <div class="hero-highlight-banner">
+            <span class="badge-flag">HONOR</span>
+            <span>SIH'25 National Finalist · Aspiring Entrepreneur · Team Zyric · Building SAHAJ</span>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">
+              Explore Projects
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a class="btn btn-secondary" href="assets/Rishik_resume.pdf" download="Rishik_Penumudi_Resume.pdf" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Download Resume
+            </a>
+            <a class="btn btn-ghost" href="#contact">Contact Me</a>
+          </div>
+
+          <div class="hero-quick-meta">
+            <span>📍 Vijayawada, Andhra Pradesh, India</span>
+            <span>🎓 B.Tech CSE (Honors Through Innovation) · KL'28</span>
+            <span>💼 Available for Summer 2026 Internships</span>
+          </div>
+        </div>
+
+        <!-- Hero Command Center Deck -->
+        <aside class="hero-card-deck" aria-label="Command Center Summary">
+          <div class="deck-header">
+            <div class="deck-profile">
+              <div class="deck-avatar">RP<span>.</span></div>
+              <div class="deck-title">
+                <h3>Rishik Penumudi</h3>
+                <p>Student Innovator & Developer</p>
+              </div>
+            </div>
+            <span class="deck-status-tag">ACTIVE FOCUS</span>
+          </div>
+
+          <p class="deck-focus-label">Currently Exploring & Building</p>
+          <div class="deck-focus-items">
+            <div class="deck-focus-item">
+              <span class="focus-num">01</span>
+              <div class="focus-content">
+                <h4>SAHAJ · Natural Dye Automation</h4>
+                <p>IoT & AI-assisted extraction prototype with Team Zyric</p>
+              </div>
+            </div>
+            <div class="deck-focus-item">
+              <span class="focus-num">02</span>
+              <div class="focus-content">
+                <h4>Microservices & Distributed Systems</h4>
+                <p>Spring Boot, Eureka, REST APIs & PostgreSQL architecture</p>
+              </div>
+            </div>
+            <div class="deck-focus-item">
+              <span class="focus-num">03</span>
+              <div class="focus-content">
+                <h4>Applied AI & Process Analytics</h4>
+                <p>Celonis process mining, predictive modeling & GenAI analytics</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="deck-metrics-grid">
+            <div class="deck-metric-box">
+              <strong>8.75<span>/10</span></strong>
+              <small>Current CGPA</small>
+            </div>
+            <div class="deck-metric-box">
+              <strong>SIH '25</strong>
+              <small>National Finalist</small>
+            </div>
+            <div class="deck-metric-box">
+              <strong>120<span> hrs</span></strong>
+              <small>Celonis BA Training</small>
+            </div>
+            <div class="deck-metric-box">
+              <strong>AWS<span> CCP</span></strong>
+              <small>Certified Cloud</small>
+            </div>
+          </div>
+        </aside>
       </div>
-      <div class="hero-meta"><span>Vijayawada, Andhra Pradesh, India</span><span>B.Tech CSE · Honors Through Innovation · KL'28</span></div>
+    </section>
+
+    <!-- ==================== SOCIAL & PROFESSIONAL PROFILE DASHBOARD ==================== -->
+    <section class="dashboard-section" id="profiles">
+      <div class="container">
+        <div class="profiles-card">
+          <div class="profiles-header">
+            <div class="profiles-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+              <h3>Personal Command Center · Professional Profiles</h3>
+            </div>
+            <span class="deck-focus-label" style="margin-bottom: 0;">Verified Profiles & Direct Contact</span>
+          </div>
+
+          <div class="profiles-grid">
+            <!-- LinkedIn -->
+            <a class="profile-card" href="https://www.linkedin.com/in/penumudi-rishik-3b1b90368/" target="_blank" rel="noopener">
+              <div>
+                <div class="profile-card-top">
+                  <div class="profile-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2z"/></svg>
+                  </div>
+                  <span class="profile-card-arrow">↗</span>
+                </div>
+                <div class="profile-info">
+                  <h4>LinkedIn</h4>
+                  <p>Professional network, updates & career journey</p>
+                </div>
+              </div>
+              <div class="profile-meta">
+                <span>penumudi-rishik</span>
+                <span>Connect ↗</span>
+              </div>
+            </a>
+
+            <!-- GitHub -->
+            <a class="profile-card" href="https://github.com/RishikPenumudi" target="_blank" rel="noopener">
+              <div>
+                <div class="profile-card-top">
+                  <div class="profile-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                  </div>
+                  <span class="profile-card-arrow">↗</span>
+                </div>
+                <div class="profile-info">
+                  <h4>GitHub</h4>
+                  <p>Source code repositories, prototypes & systems</p>
+                </div>
+              </div>
+              <div class="profile-meta">
+                <span>@RishikPenumudi</span>
+                <span>Repos ↗</span>
+              </div>
+            </a>
+
+            <!-- LeetCode -->
+            <a class="profile-card" href="https://leetcode.com/u/KLU2400030782/" target="_blank" rel="noopener">
+              <div>
+                <div class="profile-card-top">
+                  <div class="profile-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 4.818 3.593 5.86 5.86 0 0 0 2.772-.543l4.63-2.613a1.376 1.376 0 1 0-1.345-2.382l-4.63 2.613a3.12 3.12 0 0 1-1.477.29 3.194 3.194 0 0 1-2.593-1.933 3.13 3.13 0 0 1-.186-.547 3.01 3.01 0 0 1-.034-1.285 2.87 2.87 0 0 1 .658-1.144L8.79 8.016l5.656-5.46a1.376 1.376 0 0 0-.963-2.556zM15.42 7.794a1.375 1.375 0 0 0-.965 2.353l3.66 3.66a3.178 3.178 0 0 1 0 4.494l-3.66 3.66a1.375 1.375 0 1 0 1.944 1.945l3.66-3.66a5.928 5.928 0 0 0 0-8.384l-3.66-3.66a1.37 1.37 0 0 0-.979-.408z"/></svg>
+                  </div>
+                  <span class="profile-card-arrow">↗</span>
+                </div>
+                <div class="profile-info">
+                  <h4>LeetCode</h4>
+                  <p>Data structures, algorithms & technical problem solving</p>
+                </div>
+              </div>
+              <div class="profile-meta">
+                <span>KLU2400030782</span>
+                <span>Profile ↗</span>
+              </div>
+            </a>
+
+            <!-- CodeChef -->
+            <a class="profile-card" href="https://www.codechef.com/users/kl2400030782" target="_blank" rel="noopener">
+              <div>
+                <div class="profile-card-top">
+                  <div class="profile-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.66 2.01c-.13 0-.25.05-.34.14l-8.5 8.5a.48.48 0 0 0 0 .68l8.5 8.5c.19.19.49.19.68 0l8.5-8.5a.48.48 0 0 0 0-.68l-8.5-8.5a.48.48 0 0 0-.34-.14zm-.34 3.14l5.35 5.35-5.35 5.35-5.35-5.35 5.35-5.35z"/></svg>
+                  </div>
+                  <span class="profile-card-arrow">↗</span>
+                </div>
+                <div class="profile-info">
+                  <h4>CodeChef</h4>
+                  <p>Competitive coding contests & speed programming</p>
+                </div>
+              </div>
+              <div class="profile-meta">
+                <span>kl2400030782</span>
+                <span>Profile ↗</span>
+              </div>
+            </a>
+
+            <!-- Email & Direct Action -->
+            <div class="profile-card" style="border-color: var(--border-accent);">
+              <div>
+                <div class="profile-card-top">
+                  <div class="profile-icon" style="background-color: var(--bg-accent-subtle); color: var(--accent-primary);">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </div>
+                  <button class="copy-email-btn copy-email-trigger" title="Copy email address" aria-label="Copy email address">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                    Copy
+                  </button>
+                </div>
+                <div class="profile-info">
+                  <h4>Direct Email</h4>
+                  <p>penumudirishik48@gmail.com</p>
+                </div>
+              </div>
+              <div class="profile-meta">
+                <a href="mailto:penumudirishik48@gmail.com" style="color: var(--accent-primary); font-weight: 700;">Send Message ↗</a>
+                <span class="copy-email-trigger" style="cursor: pointer;">Quick Copy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ME SECTION ==================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-eyebrow">01 / ABOUT ME</p>
+          <h2 class="section-title">Curiosity drives me. <span class="accent">Building defines me.</span></h2>
+          <p class="section-subtitle">
+            I don't just learn technology. I explore ideas, build solutions, experiment with products and turn problems into possibilities.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-narrative">
+            <h3>A Computer Science student with a builder's mindset.</h3>
+            <p>
+              I am pursuing my <strong>B.Tech in Computer Science and Engineering with Honors Through Innovation (HTI)</strong> at KL University (Class of 2028). My journey is rooted in an unwavering conviction: technology achieves its greatest meaning when it leaves the screen to solve genuine human, industrial, or ecological challenges.
+            </p>
+            <p>
+              I focus on the intersection where <strong>software engineering, artificial intelligence, data analytics, and embedded hardware meet product design</strong>. Through hackathons, virtual internships, and community fieldwork, I've developed the discipline to frame ambiguous problems, translate user needs into architectural specifications, build functional prototypes, and iterate relentlessly.
+            </p>
+            <p>
+              Currently, my primary innovation pursuit is <strong>SAHAJ</strong>, a smart automated heritage artisan natural dyeing system developed with Team Zyric, which earned recognition as a <strong>Smart India Hackathon 2025 National Finalist</strong>.
+            </p>
+
+            <p class="pillars-label">Core Pillars of Interest & Exploration</p>
+            <div class="pillars-wrap">
+              <span class="pillar-chip">Software Engineering</span>
+              <span class="pillar-chip">Artificial Intelligence</span>
+              <span class="pillar-chip">Data Analytics & Engineering</span>
+              <span class="pillar-chip">Product Development</span>
+              <span class="pillar-chip">Process Mining</span>
+              <span class="pillar-chip">Entrepreneurship</span>
+              <span class="pillar-chip">Embedded Systems & IoT</span>
+              <span class="pillar-chip">Hardware-Software Integration</span>
+              <span class="pillar-chip">Design Thinking</span>
+              <span class="pillar-chip">Sustainable Innovation</span>
+            </div>
+          </article>
+
+          <!-- Education Timeline Panel -->
+          <aside class="education-panel" aria-label="Education History">
+            <div class="panel-header">
+              <h3>Academic Foundations</h3>
+              <span class="deck-focus-label" style="margin: 0;">EDUCATION TIMELINE</span>
+            </div>
+
+            <div class="edu-timeline">
+              <!-- KL University -->
+              <div class="edu-item current">
+                <span class="edu-dot"></span>
+                <span class="edu-badge">CURRENT DEGREE</span>
+                <h4 class="edu-institution">K L University</h4>
+                <p class="edu-degree">B.Tech — Computer Science & Engineering</p>
+                <p style="font-size: 0.8125rem; color: var(--accent-primary); font-weight: 600; margin-top: 2px;">
+                  Honors Through Innovation (HTI)
+                </p>
+                <div class="edu-meta">
+                  <span>2024 – 2028</span>
+                  <span class="edu-score">CGPA: 8.75 / 10</span>
+                </div>
+              </div>
+
+              <!-- Intermediate -->
+              <div class="edu-item">
+                <span class="edu-dot"></span>
+                <h4 class="edu-institution">Sri Chaitanya Junior College</h4>
+                <p class="edu-degree">Intermediate (Class XII) · MPC Stream</p>
+                <p style="font-size: 0.8125rem; color: var(--text-muted); margin-top: 2px;">
+                  Raman Bhavan 2, Vijayawada
+                </p>
+                <div class="edu-meta">
+                  <span class="edu-score">Score: 76%</span>
+                </div>
+              </div>
+
+              <!-- 10th School -->
+              <div class="edu-item">
+                <span class="edu-dot"></span>
+                <h4 class="edu-institution">Dr. KKR Gowtham School</h4>
+                <p class="edu-degree">Secondary School Certificate (Class X)</p>
+                <p style="font-size: 0.8125rem; color: var(--text-muted); margin-top: 2px;">
+                  Tenali, Andhra Pradesh
+                </p>
+                <div class="edu-meta">
+                  <span class="edu-score">Score: 80%</span>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE SECTION ==================== -->
+    <section class="section" id="experience" style="background-color: #FFFFFF; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-eyebrow">02 / PROFESSIONAL EXPERIENCE</p>
+          <h2 class="section-title">Learning through <span class="accent">execution & field exposure.</span></h2>
+          <p class="section-subtitle">
+            Internship training and community immersion that solidified analytical problem solving and real-world stakeholder empathy.
+          </p>
+        </div>
+
+        <div class="experience-timeline">
+          <!-- Experience 1: Celonis -->
+          <article class="exp-card">
+            <div class="exp-top">
+              <div class="exp-title-block">
+                <h3>Business Analyst Virtual Internship — Celonis</h3>
+                <p class="exp-org">EduSkills Foundation in collaboration with Celonis & AICTE / APSCHE</p>
+              </div>
+              <span class="exp-badge-grade">Grade O · Outstanding</span>
+            </div>
+
+            <div class="exp-meta-row">
+              <span>📅 April 2026 – June 2026</span>
+              <span>⏱️ 8 Weeks · 120 Hours</span>
+              <span>🌐 Virtual Internship</span>
+            </div>
+
+            <p class="exp-desc">
+              Completed an intensive 120-hour Business Analyst internship focused on understanding business process flows, process-oriented analytics, and data-driven decision-making. Applied process mining fundamentals to identify bottlenecks, measure execution variance against target KPIs, and explore systematic optimization paths.
+            </p>
+
+            <p class="exp-skills-label">Core Learning & Applied Competencies</p>
+            <div class="exp-chips">
+              <span class="exp-chip">Business Process Management (BPM)</span>
+              <span class="exp-chip">Process Mining Fundamentals</span>
+              <span class="exp-chip">Business Data Analysis</span>
+              <span class="exp-chip">Bottleneck Identification</span>
+              <span class="exp-chip">Process Performance Tracking</span>
+              <span class="exp-chip">Data-driven Improvement</span>
+            </div>
+
+            <div class="exp-footer">
+              <span style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);">
+                Verified EduSkills / APSCHE / AICTE completion
+              </span>
+              <a class="exp-cert-link" href="assets/certificates/Celonis_Business_Analyst.pdf" target="_blank" rel="noopener">
+                View Celonis Certificate (PDF) ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Experience 2: Social Internship -->
+          <article class="exp-card">
+            <div class="exp-top">
+              <div class="exp-title-block">
+                <h3>Social Intern — Smart Village Program</h3>
+                <p class="exp-org">Student Activity Centre (SAC), KL University</p>
+              </div>
+              <span class="exp-badge-grade" style="background-color: var(--bg-accent-subtle); border-color: var(--border-accent); color: var(--accent-primary);">
+                Field Research
+              </span>
+            </div>
+
+            <div class="exp-meta-row">
+              <span>📅 June 1 – 7, 2025</span>
+              <span>📍 KL University / Adopted Rural Communities</span>
+              <span>👥 Stakeholder Fieldwork</span>
+            </div>
+
+            <p class="exp-desc">
+              Participated in structured on-ground field research to observe and assess rural infrastructure needs, sanitation channels, and community utilities. Documented direct observations and conducted interviews with local stakeholders to identify practical friction points. Developed vital experience in user-centric problem discovery, translating field observations into actionable problem definitions.
+            </p>
+
+            <p class="exp-skills-label">Key Fieldwork Outcomes</p>
+            <div class="exp-chips">
+              <span class="exp-chip">Community Field Research</span>
+              <span class="exp-chip">Stakeholder Interviews</span>
+              <span class="exp-chip">Problem Identification</span>
+              <span class="exp-chip">Rural Infrastructure Needs</span>
+              <span class="exp-chip">Observation Synthesis</span>
+            </div>
+
+            <div class="exp-footer">
+              <span style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);">
+                SAC KL University Social Outreach Initiative
+              </span>
+              <span style="font-size: 0.8125rem; font-weight: 600; color: var(--text-secondary);">
+                Field Observation Report Documented
+              </span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FLAGSHIP SAHAJ INNOVATION CASE STUDY ==================== -->
+    <section class="section sahaj-section" id="sahaj">
+      <div class="container">
+        <div class="section-head">
+          <div class="flagship-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            FLAGSHIP INNOVATION PROJECT · TEAM ZYRIC
+          </div>
+          <h2 class="section-title">SAHAJ — <span class="accent">Smart Automated Heritage Artisan Natural Dyeing System</span></h2>
+          <p class="section-subtitle">
+            An automated hardware-software prototype blending embedded process automation, thermal control, and an AI-assisted roadmap to empower natural textile artisans.
+          </p>
+        </div>
+
+        <div class="sahaj-hero-card">
+          <!-- Visual Deck with Mandatory Actual Photos -->
+          <div class="sahaj-visual-deck">
+            <!-- Primary Photograph -->
+            <div class="sahaj-primary-frame">
+              <img src="assets/sahaj-primary.jpg" alt="SAHAJ prototype: stainless-steel dyeing vessel on the left, touchscreen with red SAHAJ branding, cream enclosure, pump tubing, and electronics compartment" loading="lazy">
+              <div class="photo-overlay-caption">
+                <strong>Primary Prototype Photograph (SIH'25 Finalist Iteration)</strong>
+                <span>Stainless-steel extraction vessel, touchscreen control interface, cream enclosure, silicone transfer tubing, and electronics bay.</span>
+              </div>
+            </div>
+
+            <!-- Supporting Photograph -->
+            <div class="sahaj-supporting-frame">
+              <div>
+                <p style="font-family: var(--font-mono); font-size: 0.6875rem; color: #93C5FD; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px;">
+                  TECHNICAL REFERENCE
+                </p>
+                <h4 style="color: #FFFFFF; font-size: 1.125rem; font-weight: 700; margin-bottom: 12px;">
+                  Hardware Layout & Electronics
+                </h4>
+              </div>
+              <div class="supporting-img-wrap">
+                <img src="assets/sahaj-supporting.png" alt="SAHAJ technical prototype reference photo showing wiring and components" loading="lazy">
+              </div>
+              <div class="supporting-caption">
+                <strong>Physical Enclosure & Subsystem Detail</strong>
+                <span>Internal layout showcasing solid-state relay modules, thermal regulation circuitry, and peristaltic pumping lines.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case Study Content -->
+          <div class="sahaj-content-wrap">
+            <div class="sahaj-summary-grid">
+              <div class="sahaj-summary-block">
+                <h4>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                  The Critical Problem
+                </h4>
+                <p>
+                  Synthetic chemical dyeing produces massive volumes of toxic effluent, consuming extensive energy and heavy metals. Meanwhile, traditional botanical dyeing faces challenges in <strong>temperature repeatability, measurement accuracy, process-time tracking, and color variance</strong> across artisan batches.
+                </p>
+              </div>
+
+              <div class="sahaj-summary-block">
+                <h4>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                  The System Vision
+                </h4>
+                <p>
+                  SAHAJ introduces precision-regulated botanical extraction: controlled heating profiles, digital temperature feedback, automated stirring, and timed cloth immersion. Artisans achieve consistent, repeatable shades without losing the heritage essence of natural dyes.
+                </p>
+              </div>
+
+              <div class="sahaj-summary-block">
+                <h4>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                  Sustainable Business Model
+                </h4>
+                <p>
+                  To maximize artisan adoption, the business model avoids heavy hardware capital expenses. The system is designed around <strong>supplying standardized, pre-measured natural dye inputs and consumable cartridges</strong>, keeping the core machinery affordable for rural clusters.
+                </p>
+              </div>
+            </div>
+
+            <!-- AI-Assisted Roadmap (The 4 Distinct Goals) -->
+            <div class="sahaj-ai-section">
+              <div class="sahaj-ai-header">
+                <h4>AI Integration Vision · 4 Dedicated Goals</h4>
+                <p>Proposed algorithmic roadmap to assist artisans through intelligent estimation and closed-loop process guidance.</p>
+              </div>
+
+              <div class="ai-goals-grid">
+                <div class="ai-goal-card">
+                  <span class="goal-num">GOAL 01</span>
+                  <h5>Colour Palette Identification</h5>
+                  <p>Analyzes desired color shades or fabric targets, mapping them to validated botanical dye formulations (e.g. madder root, marigold, pomegranate rind).</p>
+                </div>
+
+                <div class="ai-goal-card">
+                  <span class="goal-num">GOAL 02</span>
+                  <h5>Biomass & Water Measurement</h5>
+                  <p>Calculates precise solvent-to-plant biomass ratios based on batch volume, fabric dry-weight, and water hardness for optimal extraction efficiency.</p>
+                </div>
+
+                <div class="ai-goal-card">
+                  <span class="goal-num">GOAL 03</span>
+                  <h5>Dye Output Prediction</h5>
+                  <p>Estimates chromatic yield and concentration prior to immersion, computing expected error margins and recommending real-time adjustments.</p>
+                </div>
+
+                <div class="ai-goal-card">
+                  <span class="goal-num">GOAL 04</span>
+                  <h5>Process Guidance & Immersion</h5>
+                  <p>Monitors extraction kinetics over time, alerting the artisan when extraction has reached equilibrium and initiating the fabric immersion cycle.</p>
+                </div>
+              </div>
+
+              <!-- Honest Distinction Notice -->
+              <div class="prototype-notice">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <div>
+                  <strong>Development Status & Integrity Note:</strong> The physical prototype shown above successfully validates temperature regulation, stirring, vessel pumping, and basic color feedback. The four AI workflow goals represent our active algorithmic roadmap and are clearly distinguished from current hardware-validated features.
+                </div>
+              </div>
+            </div>
+
+            <!-- Hardware & Specifications -->
+            <div class="sahaj-specs-grid">
+              <div class="specs-card">
+                <h5>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line></svg>
+                  Core Hardware & Electronics
+                </h5>
+                <ul class="specs-list">
+                  <li>Raspberry Pi 4 (Touchscreen user UI & orchestration)</li>
+                  <li>DS18B20 digital waterproof temperature sensor</li>
+                  <li>TCS34725 I2C RGB colour sensor</li>
+                  <li>Solid-State Relay (SSR) modules for thermal safety</li>
+                  <li>DC peristaltic pumps & solenoid transfer valves</li>
+                  <li>Earlier iterations tested on Arduino UNO & 16x2 LCD</li>
+                </ul>
+              </div>
+
+              <div class="specs-card">
+                <h5>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                  Inclusive Multilingual UI
+                </h5>
+                <ul class="specs-list">
+                  <li>English, Hindi, and Telugu interface support</li>
+                  <li>Visual temperature graphs & countdown timers</li>
+                  <li>One-touch preset recipes for botanical dyes</li>
+                  <li>High-contrast status alerts for boiling & cooling</li>
+                  <li>Simplified icon-driven navigation for rural artisans</li>
+                </ul>
+              </div>
+
+              <div class="specs-card">
+                <h5>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                  Recognition & Milestones
+                </h5>
+                <ul class="specs-list">
+                  <li><strong>SIH 2025:</strong> National Finalist with Team Zyric</li>
+                  <li><strong>SIH 2026:</strong> Presented upgraded 3D-printed prototype</li>
+                  <li><strong>Buildathon 2026:</strong> Shortlisted for Hyderabad Buildathon</li>
+                  <li><strong>PitchX 2026:</strong> Presented startup pitch in Mumbai</li>
+                  <li><strong>Purdue EPICS:</strong> Showcased to Dr. William Oakes</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- UN SDG Row -->
+            <div class="sdg-row">
+              <span class="sdg-label">United Nations SDG Alignment:</span>
+              <span class="sdg-pill primary-sdg">🎯 SDG 12: Responsible Consumption & Production</span>
+              <span class="sdg-pill">💧 SDG 6: Clean Water</span>
+              <span class="sdg-pill">⚙️ SDG 9: Industry & Innovation</span>
+              <span class="sdg-pill">🌍 SDG 13: Climate Action</span>
+            </div>
+
+            <div style="margin-top: 32px; display: flex; gap: 14px; flex-wrap: wrap;">
+              <button class="btn btn-primary" data-modal-target="sahaj">
+                Read Full Technical Case Study
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+              <a class="btn btn-secondary" href="assets/certificates/SIH_2025_Certificate.jpeg" target="_blank" rel="noopener">
+                View SIH Certificate (JPG) ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FEATURED SOFTWARE PROJECTS ==================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-eyebrow">04 / FEATURED PROJECTS</p>
+          <h2 class="section-title">Engineered solutions <span class="accent">across the stack.</span></h2>
+          <p class="section-subtitle">
+            Full-stack systems, microservices architectures, and client-side applications built with clean code and robust design patterns.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 02: Smart Parking Management System -->
+          <article class="project-card">
+            <div>
+              <div class="project-visual visual-parking">
+                <div class="visual-diagram-card">
+                  <div class="diag-title">MICROSERVICES ARCHITECTURE</div>
+                  <div class="diag-flow">
+                    <div class="diag-node">Gateway</div>
+                    <span class="diag-arrow">→</span>
+                    <div class="diag-node">Eureka</div>
+                    <span class="diag-arrow">→</span>
+                    <div class="diag-node">Services</div>
+                    <span class="diag-arrow">→</span>
+                    <div class="diag-node">Postgres</div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <span class="project-category">Full-Stack · Microservices · Smart Cities</span>
+                <h3 class="project-title">Smart Parking Management System</h3>
+                <p class="project-desc">
+                  Designed a microservices-based smart parking ecosystem to alleviate urban traffic congestion by enabling live slot reservations, administrator monitoring, and dynamic billing.
+                </p>
+
+                <div class="project-highlights">
+                  <h5>Architecture Breakdown</h5>
+                  <ul>
+                    <li>Spring Cloud API Gateway for rate limiting & secure routing</li>
+                    <li>Eureka Service Registry for zero-downtime microservice discovery</li>
+                    <li>Stateless JWT authentication for role-based driver & admin access</li>
+                    <li>Isolated services: Auth, Parking Inventory, Booking, Billing</li>
+                    <li>PostgreSQL relational database ensuring transactional integrity</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div style="padding: 0 32px 32px;">
+              <div class="project-tags">
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Eureka</span>
+                <span class="tech-tag">JWT</span>
+                <span class="tech-tag">REST APIs</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-secondary btn-sm" data-modal-target="parking">
+                  Architecture Details ↗
+                </button>
+                <span style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--text-muted);">
+                  Backend Architecture
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 03: Vijayawada Smart City Portal -->
+          <article class="project-card">
+            <div>
+              <div class="project-visual visual-city">
+                <div class="visual-diagram-card">
+                  <div class="diag-title">CITIZEN PORTAL CONCEPT</div>
+                  <div class="diag-flow">
+                    <div class="diag-node">Citizen</div>
+                    <span class="diag-arrow">→</span>
+                    <div class="diag-node">Grievance Ticket</div>
+                    <span class="diag-arrow">→</span>
+                    <div class="diag-node">Dept SLA</div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <span class="project-category">Full-Stack Web · Civic Tech Concept</span>
+                <h3 class="project-title">Vijayawada Smart City Portal</h3>
+                <p class="project-desc">
+                  A citizen-oriented digital governance portal concept created to centralize municipal service discovery, grievance ticketing, sanitation reporting, and municipal tracking.
+                </p>
+
+                <div class="project-highlights">
+                  <h5>Functional Highlights</h5>
+                  <ul>
+                    <li>Centralized directory for public services & local civic utilities</li>
+                    <li>Interactive grievance submission with geo-tagging & status SLA</li>
+                    <li>Department triage workflow for Roads, Water & Sanitation</li>
+                    <li>Administrative resolution dashboard with visual accountability</li>
+                    <li>Accessibility-first typography designed for regional accessibility</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div style="padding: 0 32px 32px;">
+              <div class="project-tags">
+                <span class="tech-tag">HTML5 / CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Civic Tech</span>
+                <span class="tech-tag">Dashboard UX</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-secondary btn-sm" data-modal-target="city">
+                  Concept Overview ↗
+                </button>
+                <span style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--text-muted);">
+                  Civic Innovation
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 04: Student Attendance Tracker -->
+          <article class="project-card">
+            <div>
+              <div class="project-visual visual-attendance">
+                <div class="visual-diagram-card">
+                  <div class="diag-title">REACT CLIENT APP</div>
+                  <div class="diag-flow">
+                    <div class="diag-node">State</div>
+                    <span class="diag-arrow">→</span>
+                    <div class="diag-node">Live Recalc</div>
+                    <span class="diag-arrow">→</span>
+                    <div class="diag-node">LocalStorage</div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <span class="project-category">Frontend Development · Single Page Application</span>
+                <h3 class="project-title">Student Attendance Tracker</h3>
+                <p class="project-desc">
+                  A responsive Single Page Application built to replace paper roll calls in academic teams. Computes real-time attendance percentages, flags shortage risks, and caches state offline.
+                </p>
+
+                <div class="project-highlights">
+                  <h5>Technical Implementation</h5>
+                  <ul>
+                    <li>React component architecture with Vite for rapid bundling</li>
+                    <li>Material UI data tables with customizable attendance thresholds</li>
+                    <li>Bulk status updates (Mark All Present / Absent / Late)</li>
+                    <li>Reactive statistics recalculation on every student toggle</li>
+                    <li>Persistent state management via browser LocalStorage (no server dependency)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div style="padding: 0 32px 32px;">
+              <div class="project-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Vite</span>
+                <span class="tech-tag">Material UI</span>
+                <span class="tech-tag">LocalStorage</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-secondary btn-sm" data-modal-target="attendance">
+                  SPA Details ↗
+                </button>
+                <span style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--text-muted);">
+                  Frontend Application
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== AI & DATA APPLIED LEARNING ==================== -->
+    <section class="section" id="ai-data" style="background-color: #FFFFFF; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-eyebrow">05 / AI & DATA — APPLIED LEARNING</p>
+          <h2 class="section-title">Industry-inspired <span class="accent">virtual job simulations.</span></h2>
+          <p class="section-subtitle">
+            Applying machine learning, exploratory analytics, and generative AI to solve complex enterprise business case studies via Forage.
+          </p>
+        </div>
+
+        <div class="ai-simulations-grid">
+          <!-- Simulation 1: British Airways -->
+          <article class="sim-card">
+            <div>
+              <div class="sim-top">
+                <div class="sim-company-mark">BA</div>
+                <span class="sim-platform-pill">FORAGE · NOV 2026</span>
+              </div>
+              <span class="sim-type">DATA SCIENCE JOB SIMULATION</span>
+              <h3 class="sim-title">British Airways — Predictive Modeling</h3>
+              <p class="sim-desc">
+                Conducted customer booking prediction and Heathrow Terminal 3 lounge eligibility analytics using real-world airline behavioral datasets.
+              </p>
+
+              <ul class="sim-tasks-list">
+                <li>Exploratory data analysis & customer flight booking preparation</li>
+                <li>Trained Random Forest classification model for purchase conversion</li>
+                <li>K-fold cross-validation & hyperparameter tuning</li>
+                <li>Feature importance analysis to identify key conversion drivers</li>
+                <li>Modeled terminal lounge eligibility rules based on flyer tiers</li>
+              </ul>
+
+              <div class="sim-metric-highlight">
+                <div>
+                  <strong>79.5% ROC-AUC</strong>
+                  <div style="font-size: 0.6875rem; color: #065F46;">Model Evaluation on Test Dataset</div>
+                </div>
+                <span>Predictive Model</span>
+              </div>
+            </div>
+
+            <div class="sim-footer">
+              <span title="Verification Credential ID">ID: 6ae8679a90367ee6883e30b7</span>
+              <a class="sim-cert-btn" href="assets/certificates/British_Airways_Data_Science.pdf" target="_blank" rel="noopener">
+                View Certificate (PDF) ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Simulation 2: Tata -->
+          <article class="sim-card">
+            <div>
+              <div class="sim-top">
+                <div class="sim-company-mark" style="background: #004B87;">TATA</div>
+                <span class="sim-platform-pill">FORAGE · NOV 2026</span>
+              </div>
+              <span class="sim-type">GENAI POWERED ANALYTICS</span>
+              <h3 class="sim-title">Tata — Risk Profiling & Collections</h3>
+              <p class="sim-desc">
+                Explored how artificial intelligence and advanced data analytics support credit risk evaluation, delinquency forecasting, and collections workflows.
+              </p>
+
+              <ul class="sim-tasks-list">
+                <li>Exploratory Data Analysis (EDA) on retail customer profiles</li>
+                <li>Customer risk profiling & credit delinquency scoring</li>
+                <li>Designed GenAI-assisted collections communication strategy</li>
+                <li>Prepared executive dashboard reports and analytical data storytelling</li>
+                <li>Formulated business-oriented mitigation recommendations</li>
+              </ul>
+            </div>
+
+            <div class="sim-footer" style="margin-top: auto;">
+              <span>Forage Virtual Simulation</span>
+              <a class="sim-cert-btn" href="assets/certificates/Tata_GenAI_Analytics.pdf" target="_blank" rel="noopener">
+                View Certificate (PDF) ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Simulation 3: Deloitte -->
+          <article class="sim-card">
+            <div>
+              <div class="sim-top">
+                <div class="sim-company-mark" style="background: #86BC25; color: #000;">D</div>
+                <span class="sim-platform-pill">FORAGE · NOV 2026</span>
+              </div>
+              <span class="sim-type">DATA ANALYTICS JOB SIMULATION</span>
+              <h3 class="sim-title">Deloitte — Forensic & Business Analytics</h3>
+              <p class="sim-desc">
+                Tackled realistic corporate consulting case tasks, gaining direct exposure to forensic technology, data interpretation, and anomaly detection.
+              </p>
+
+              <ul class="sim-tasks-list">
+                <li>Structured complex business data to extract actionable findings</li>
+                <li>Interpreted financial & operational data across business units</li>
+                <li>Explored forensic analytics methodologies for audit compliance</li>
+                <li>Drafted risk insights to support client executive decision-making</li>
+              </ul>
+            </div>
+
+            <div class="sim-footer" style="margin-top: auto;">
+              <span>Forage Virtual Simulation</span>
+              <a class="sim-cert-btn" href="assets/certificates/Deloitte_Data_Analytics.pdf" target="_blank" rel="noopener">
+                View Certificate (PDF) ↗
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ACHIEVEMENTS & INNOVATION JOURNEY ==================== -->
+    <section class="section" id="achievements">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-eyebrow">06 / ACHIEVEMENTS & RECOGNITION</p>
+          <h2 class="section-title">Milestones in <span class="accent">innovation, competition & leadership.</span></h2>
+          <p class="section-subtitle">
+            A chronological track record of national hackathons, pitch showcases, academic expos, and community knowledge sharing.
+          </p>
+        </div>
+
+        <div class="achievements-grid">
+          <!-- Featured SIH 2025 Banner Card -->
+          <article class="achievement-card highlight-sih">
+            <div>
+              <div class="achieve-header">
+                <span class="achieve-category">NATIONAL HACKATHON · PREMIER RECOGNITION</span>
+                <span class="achieve-status" style="background-color: #FEF3C7; color: #92400E; font-weight: 800;">NATIONAL FINALIST</span>
+              </div>
+              <h4 style="font-size: 1.375rem; color: var(--text-primary); margin-bottom: 10px;">
+                Smart India Hackathon 2025 — National Finalist
+              </h4>
+              <p style="font-size: 0.9375rem; color: var(--text-secondary); line-height: 1.7;">
+                Selected as a National Finalist in Smart India Hackathon 2025 with Team Zyric for <strong>SAHAJ (Smart Automated Heritage Artisan Natural Dyeing System)</strong>. Designed and presented an automated hardware solution supporting sustainable natural dyeing for artisan clusters, addressing UN SDG 12.
+              </p>
+            </div>
+            <div class="achieve-action-row">
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">
+                Ministry of Education Innovation Cell, Govt. of India
+              </span>
+              <a class="btn btn-secondary btn-sm" href="assets/certificates/SIH_2025_Certificate.jpeg" target="_blank" rel="noopener">
+                View Official SIH Certificate (JPG) ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Google Buildathon 2026 -->
+          <article class="achievement-card">
+            <div>
+              <div class="achieve-header">
+                <span class="achieve-category">BUILDATHON · SHORTLISTED</span>
+                <span class="achieve-status">SHORTLISTED</span>
+              </div>
+              <h4>Google Buildathon 2026 (Hack2Skill)</h4>
+              <p>Shortlisted with Team Zyric for the Hyderabad City Buildathon (scheduled Nov 20–21, 2026). Selected for the SAHAJ AI closed-loop optimization concept.</p>
+            </div>
+            <div class="achieve-action-row">
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">Hyderabad City Round</span>
+            </div>
+          </article>
+
+          <!-- SIH 2026 KLU Internal Round -->
+          <article class="achievement-card">
+            <div>
+              <div class="achieve-header">
+                <span class="achieve-category">PROTOTYPE SHOWCASE</span>
+                <span class="achieve-status">3D PROTOTYPE</span>
+              </div>
+              <h4>SIH 2026 — KLU Internal Round</h4>
+              <p>Showcased an upgraded version of the SAHAJ prototype featuring a custom 3D-printed modular enclosure, upgraded sensor mounts, and refined temperature circuitry.</p>
+            </div>
+            <div class="achieve-action-row">
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">KL University Internal Expo</span>
+            </div>
+          </article>
+
+          <!-- SIH Experience Sharing -->
+          <article class="achievement-card">
+            <div>
+              <div class="achieve-header">
+                <span class="achieve-category">PEER MENTORSHIP</span>
+                <span class="achieve-status">INVITED SPEAKER</span>
+              </div>
+              <h4>SIH Finalist Experience Sharing</h4>
+              <p>Invited as an SIH 2025 National Finalist to conduct a mentorship session for SIH 2026 aspirants, guiding students on problem selection, pitch decks, and technical demonstrations.</p>
+            </div>
+            <div class="achieve-action-row">
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">KLU Innovation Cell</span>
+            </div>
+          </article>
+
+          <!-- PitchX 2026 Mumbai -->
+          <article class="achievement-card">
+            <div>
+              <div class="achieve-header">
+                <span class="achieve-category">STARTUP PITCH COMPETITION</span>
+                <span class="achieve-status">PARTICIPANT</span>
+              </div>
+              <h4>PitchX 2026 — Mumbai</h4>
+              <p>Presented the SAHAJ natural dyeing automation venture at a national startup pitch competition in Mumbai, highlighting unit economics, SDG impacts, and cooperative dye supply models.</p>
+            </div>
+            <div class="achieve-action-row">
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">Mumbai Pitch Forum</span>
+            </div>
+          </article>
+
+          <!-- Purdue University EPICS Interaction -->
+          <article class="achievement-card">
+            <div>
+              <div class="achieve-header">
+                <span class="achieve-category">ACADEMIC INTERACTION</span>
+                <span class="achieve-status">INTERNATIONAL</span>
+              </div>
+              <h4>Purdue University — EPICS Interaction</h4>
+              <p>Had the privilege of demonstrating SAHAJ and discussing community-centered engineering design with Dr. William Oakes, Associate Dean and Director of EPICS at Purdue University, USA.</p>
+            </div>
+            <div class="achieve-action-row">
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">EPICS Engineering Design</span>
+            </div>
+          </article>
+
+          <!-- HTI Hackathon & Project Expo -->
+          <article class="achievement-card">
+            <div>
+              <div class="achieve-header">
+                <span class="achieve-category">INNOVATION EXPO</span>
+                <span class="achieve-status">EXHIBITOR</span>
+              </div>
+              <h4>HTI Hackathon & Project Expo</h4>
+              <p>Participated in rapid problem-solving, design thinking sprints, and presented physical hardware prototypes at the Honors Through Innovation Project Exhibition.</p>
+            </div>
+            <div class="achieve-action-row">
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">KL University HTI</span>
+            </div>
+          </article>
+
+          <!-- Ratan Tata Innovation Hub -->
+          <article class="achievement-card">
+            <div>
+              <div class="achieve-header">
+                <span class="achieve-category">ECOSYSTEM VISIT</span>
+                <span class="achieve-status">SHORTLISTED</span>
+              </div>
+              <h4>Ratan Tata Innovation Hub — Mangalagiri</h4>
+              <p>Shortlisted for an innovation and startup incubation immersion visit to the Ratan Tata Innovation Hub to study regional incubation resources.</p>
+            </div>
+            <div class="achieve-action-row">
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">RTIH Mangalagiri</span>
+            </div>
+          </article>
+
+          <!-- Bharatiya Vigyan Sammelan -->
+          <article class="achievement-card">
+            <div>
+              <div class="achieve-header">
+                <span class="achieve-category">SCIENCE EXPO</span>
+                <span class="achieve-status">PARTICIPANT</span>
+              </div>
+              <h4>Bharatiya Vigyan Sammelan 2025</h4>
+              <p>Participated in the Science & Innovation Expo at Tirupati, exhibiting heritage technology revitalization through modern automated systems.</p>
+            </div>
+            <div class="achieve-action-row">
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">Tirupati Expo</span>
+            </div>
+          </article>
+
+          <!-- Kotak BizLabs -->
+          <article class="achievement-card">
+            <div>
+              <div class="achieve-header">
+                <span class="achieve-category">ENTREPRENEURSHIP ROADSHOW</span>
+                <span class="achieve-status">SHOWCASE</span>
+              </div>
+              <h4>Kotak BizLabs Season 3 — Amaravati</h4>
+              <p>Demonstrated SAHAJ at the Amaravati Roadshow, engaging with startup founders, early-stage investors, and technology ecosystem mentors.</p>
+            </div>
+            <div class="achieve-action-row">
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">Amaravati Roadshow</span>
+            </div>
+          </article>
+
+          <!-- OS Kernel Puzzle SAMYAK 2025 -->
+          <article class="achievement-card">
+            <div>
+              <div class="achieve-header">
+                <span class="achieve-category">TECHNO COMPETITION</span>
+                <span class="achieve-status">PARTICIPANT</span>
+              </div>
+              <h4>OS Kernel Puzzle — SAMYAK 2025</h4>
+              <p>Participated in a national-level technical competition testing operating system concepts, kernel debugging, and low-level computing puzzles.</p>
+            </div>
+            <div class="achieve-action-row">
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">SAMYAK National Fest</span>
+            </div>
+          </article>
+
+          <!-- Safe Life Club -->
+          <article class="achievement-card">
+            <div>
+              <div class="achieve-header">
+                <span class="achieve-category">COMMUNITY SERVICE</span>
+                <span class="achieve-status">MEMBER</span>
+              </div>
+              <h4>Safe Life Club — KLSAC</h4>
+              <p>Active student member contributing to campus health awareness campaigns, emergency response readiness, and blood donation drives.</p>
+            </div>
+            <div class="achieve-action-row">
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">KL Student Activity Centre</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CERTIFICATIONS & PROFESSIONAL CREDENTIALS ==================== -->
+    <section class="section" id="certifications" style="background-color: #FFFFFF; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-eyebrow">07 / CREDENTIALS & CERTIFICATIONS</p>
+          <h2 class="section-title">Verified skills & <span class="accent">professional credentials.</span></h2>
+          <p class="section-subtitle">
+            Industry and academic certifications spanning cloud infrastructure, process analytics, software engineering, and machine learning.
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="cert-filters">
+          <button class="filter-btn active" data-filter="all">All Credentials (14)</button>
+          <button class="filter-btn" data-filter="cloud">Cloud Computing</button>
+          <button class="filter-btn" data-filter="analytics">Process & Data Analytics</button>
+          <button class="filter-btn" data-filter="ai">AI & Machine Learning</button>
+          <button class="filter-btn" data-filter="web">Software & Web</button>
+          <button class="filter-btn" data-filter="business">Entrepreneurship & Systems</button>
+        </div>
+
+        <!-- Featured AWS Banner -->
+        <div class="cert-featured-banner">
+          <div class="aws-content-wrap">
+            <div class="aws-badge-icon">AWS</div>
+            <div class="aws-text">
+              <div style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; color: #FF9900; letter-spacing: 0.08em; text-transform: uppercase;">
+                FEATURED INDUSTRY CREDENTIAL
+              </div>
+              <h3>AWS Certified Cloud Practitioner</h3>
+              <p>Amazon Web Services · Core Cloud Architecture, Security, Compliance & Global Infrastructure</p>
+            </div>
+          </div>
+          <div>
+            <a class="btn btn-primary" href="assets/certificates/AWS_Cloud_Practitioner.pdf" target="_blank" rel="noopener" style="background-color: #FF9900; color: #0F172A; font-weight: 700;">
+              View AWS Certificate (PDF) ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Certifications Grid -->
+        <div class="certs-grid">
+          <!-- 01. Celonis Virtual Internship -->
+          <article class="cert-card" data-category="analytics">
+            <div>
+              <div class="cert-top">
+                <span class="cert-issuer">AICTE · EDUSKILLS · CELONIS</span>
+                <span class="cert-tag">GRADE O</span>
+              </div>
+              <h4>Celonis Business Analyst Virtual Internship</h4>
+              <p class="cert-detail">Process mining, data-driven bottleneck discovery, and execution management.</p>
+            </div>
+            <a class="cert-link-btn" href="assets/certificates/Celonis_Business_Analyst.pdf" target="_blank" rel="noopener">
+              View Certificate (PDF) ↗
+            </a>
+          </article>
+
+          <!-- 02. Celonis 120 Hours -->
+          <article class="cert-card" data-category="analytics">
+            <div>
+              <div class="cert-top">
+                <span class="cert-issuer">APSCHE · EDUSKILLS</span>
+                <span class="cert-tag">120 HOURS</span>
+              </div>
+              <h4>Celonis Business Analyst Internship</h4>
+              <p class="cert-detail">Completed 120 hours of hands-on process analytics and enterprise workflow modeling.</p>
+            </div>
+            <a class="cert-link-btn" href="assets/certificates/Celonis_Business_Analyst.pdf" target="_blank" rel="noopener">
+              View Certificate (PDF) ↗
+            </a>
+          </article>
+
+          <!-- 03. British Airways Data Science -->
+          <article class="cert-card" data-category="analytics">
+            <div>
+              <div class="cert-top">
+                <span class="cert-issuer">FORAGE · BRITISH AIRWAYS</span>
+                <span class="cert-tag">79.5% ROC-AUC</span>
+              </div>
+              <h4>Data Science Job Simulation</h4>
+              <p class="cert-detail">Customer booking conversion model using Random Forest and Heathrow T3 lounge analytics.</p>
+            </div>
+            <a class="cert-link-btn" href="assets/certificates/British_Airways_Data_Science.pdf" target="_blank" rel="noopener">
+              View Certificate (PDF) ↗
+            </a>
+          </article>
+
+          <!-- 04. Tata GenAI Analytics -->
+          <article class="cert-card" data-category="ai">
+            <div>
+              <div class="cert-top">
+                <span class="cert-issuer">FORAGE · TATA</span>
+                <span class="cert-tag">GENAI</span>
+              </div>
+              <h4>GenAI Powered Data Analytics</h4>
+              <p class="cert-detail">EDA, customer risk profiling, delinquency forecasting, and AI collections strategy.</p>
+            </div>
+            <a class="cert-link-btn" href="assets/certificates/Tata_GenAI_Analytics.pdf" target="_blank" rel="noopener">
+              View Certificate (PDF) ↗
+            </a>
+          </article>
+
+          <!-- 05. Deloitte Analytics -->
+          <article class="cert-card" data-category="analytics">
+            <div>
+              <div class="cert-top">
+                <span class="cert-issuer">FORAGE · DELOITTE</span>
+                <span class="cert-tag">FORENSICS</span>
+              </div>
+              <h4>Deloitte Data Analytics Simulation</h4>
+              <p class="cert-detail">Case tasks on forensic technology, anomaly detection, and data-driven auditing.</p>
+            </div>
+            <a class="cert-link-btn" href="assets/certificates/Deloitte_Data_Analytics.pdf" target="_blank" rel="noopener">
+              View Certificate (PDF) ↗
+            </a>
+          </article>
+
+          <!-- 06. IBM Machine Learning -->
+          <article class="cert-card" data-category="ai">
+            <div>
+              <div class="cert-top">
+                <span class="cert-issuer">IBM · COURSERA</span>
+                <span class="cert-tag">ML</span>
+              </div>
+              <h4>IBM Machine Learning</h4>
+              <p class="cert-detail">Supervised and unsupervised algorithms, regression, classification, and model evaluation.</p>
+            </div>
+            <span class="cert-link-btn" style="color: var(--text-muted);">Verified Coursework</span>
+          </article>
+
+          <!-- 07. IBM Frontend Development -->
+          <article class="cert-card" data-category="web">
+            <div>
+              <div class="cert-top">
+                <span class="cert-issuer">IBM · COURSERA</span>
+                <span class="cert-tag">FRONTEND</span>
+              </div>
+              <h4>IBM Frontend Development</h4>
+              <p class="cert-detail">Modern responsive web architecture, JavaScript ES6+, UI principles, and component design.</p>
+            </div>
+            <span class="cert-link-btn" style="color: var(--text-muted);">Verified Coursework</span>
+          </article>
+
+          <!-- 08. Meta Frontend Development -->
+          <article class="cert-card" data-category="web">
+            <div>
+              <div class="cert-top">
+                <span class="cert-issuer">META · COURSERA</span>
+                <span class="cert-tag">FRONTEND</span>
+              </div>
+              <h4>Meta Frontend Development</h4>
+              <p class="cert-detail">React workflows, modern DOM manipulation, accessibility standards, and responsive web styling.</p>
+            </div>
+            <span class="cert-link-btn" style="color: var(--text-muted);">Verified Coursework</span>
+          </article>
+
+          <!-- 09. PostgreSQL Database Management -->
+          <article class="cert-card" data-category="web">
+            <div>
+              <div class="cert-top">
+                <span class="cert-issuer">UNIVERSITY OF MICHIGAN · COURSERA</span>
+                <span class="cert-tag">DATABASE</span>
+              </div>
+              <h4>PostgreSQL Database Management</h4>
+              <p class="cert-detail">Relational database design, SQL querying, schema optimization, and ACID properties.</p>
+            </div>
+            <span class="cert-link-btn" style="color: var(--text-muted);">Verified Coursework</span>
+          </article>
+
+          <!-- 10. Cisco Python -->
+          <article class="cert-card" data-category="web">
+            <div>
+              <div class="cert-top">
+                <span class="cert-issuer">CISCO NETWORKING ACADEMY</span>
+                <span class="cert-tag">PYTHON</span>
+              </div>
+              <h4>Python Essentials</h4>
+              <p class="cert-detail">Object-oriented programming, data structures, algorithms, and modular design.</p>
+            </div>
+            <span class="cert-link-btn" style="color: var(--text-muted);">Verified Credential</span>
+          </article>
+
+          <!-- 11. Cisco Linux -->
+          <article class="cert-card" data-category="business">
+            <div>
+              <div class="cert-top">
+                <span class="cert-issuer">CISCO NETWORKING ACADEMY</span>
+                <span class="cert-tag">LINUX</span>
+              </div>
+              <h4>Linux Essentials</h4>
+              <p class="cert-detail">Command line fundamentals, shell scripting, file permissions, and process management.</p>
+            </div>
+            <span class="cert-link-btn" style="color: var(--text-muted);">Verified Credential</span>
+          </article>
+
+          <!-- 12. Cisco Web -->
+          <article class="cert-card" data-category="web">
+            <div>
+              <div class="cert-top">
+                <span class="cert-issuer">CISCO NETWORKING ACADEMY</span>
+                <span class="cert-tag">HTML / CSS / JS</span>
+              </div>
+              <h4>JavaScript, HTML & CSS</h4>
+              <p class="cert-detail">Client-side scripting, event handling, and modern web layout implementations.</p>
+            </div>
+            <span class="cert-link-btn" style="color: var(--text-muted);">Verified Credential</span>
+          </article>
+
+          <!-- 13. Cambridge Lingua Skills -->
+          <article class="cert-card" data-category="business">
+            <div>
+              <div class="cert-top">
+                <span class="cert-issuer">CAMBRIDGE ENGLISH</span>
+                <span class="cert-tag">LANGUAGE</span>
+              </div>
+              <h4>Cambridge Lingua Skills</h4>
+              <p class="cert-detail">Professional English communication, analytical reading, technical writing, and presentation.</p>
+            </div>
+            <span class="cert-link-btn" style="color: var(--text-muted);">Verified Assessment</span>
+          </article>
+
+          <!-- 14. Entrepreneurship Programs -->
+          <article class="cert-card" data-category="business">
+            <div>
+              <div class="cert-top">
+                <span class="cert-issuer">COURSERA</span>
+                <span class="cert-tag">VENTURES</span>
+              </div>
+              <h4>Entrepreneurship Learning Programs</h4>
+              <p class="cert-detail">Business model generation, value proposition design, customer validation, and startup pitching.</p>
+            </div>
+            <span class="cert-link-btn" style="color: var(--text-muted);">Verified Program</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TECHNICAL SKILLS MATRIX ==================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-eyebrow">08 / TECHNICAL TOOLKIT</p>
+          <h2 class="section-title">Skills & capabilities, <span class="accent">grounded in practice.</span></h2>
+          <p class="section-subtitle">
+            Categorized by engineering domain rather than arbitrary percentage bars. Focused on tools and technologies with verified project application.
+          </p>
+        </div>
+
+        <div class="skills-matrix">
+          <!-- Languages -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h4>Programming Languages</h4>
+            </div>
+            <div class="skill-tags-group">
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">C</span>
+              <span class="skill-pill">Java</span>
+              <span class="skill-pill">JavaScript (ES6+)</span>
+              <span class="skill-pill">SQL</span>
+            </div>
+          </div>
+
+          <!-- Frontend -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+              </div>
+              <h4>Frontend Development</h4>
+            </div>
+            <div class="skill-tags-group">
+              <span class="skill-pill">HTML5</span>
+              <span class="skill-pill">CSS3</span>
+              <span class="skill-pill">React</span>
+              <span class="skill-pill">Vite</span>
+              <span class="skill-pill">Material UI</span>
+              <span class="skill-pill">Responsive Design</span>
+            </div>
+          </div>
+
+          <!-- Backend & APIs -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+              </div>
+              <h4>Backend & Architecture</h4>
+            </div>
+            <div class="skill-tags-group">
+              <span class="skill-pill">Node.js</span>
+              <span class="skill-pill">Spring Boot</span>
+              <span class="skill-pill">RESTful APIs</span>
+              <span class="skill-pill">Hibernate / JPA</span>
+              <span class="skill-pill">Microservices Architecture</span>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              </div>
+              <h4>Databases & Storage</h4>
+            </div>
+            <div class="skill-tags-group">
+              <span class="skill-pill">PostgreSQL</span>
+              <span class="skill-pill">MySQL</span>
+              <span class="skill-pill">Relational Schema Design</span>
+              <span class="skill-pill">Query Optimization</span>
+            </div>
+          </div>
+
+          <!-- AI & Data Analytics -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
+              </div>
+              <h4>AI & Data Analytics</h4>
+            </div>
+            <div class="skill-tags-group">
+              <span class="skill-pill">Machine Learning</span>
+              <span class="skill-pill">Exploratory Data Analysis (EDA)</span>
+              <span class="skill-pill">Predictive Modeling</span>
+              <span class="skill-pill">Process Mining</span>
+              <span class="skill-pill">Business Analytics</span>
+              <span class="skill-pill">Data Storytelling</span>
+            </div>
+          </div>
+
+          <!-- Cloud & DevOps Tools -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+              </div>
+              <h4>Cloud & Developer Tools</h4>
+            </div>
+            <div class="skill-tags-group">
+              <span class="skill-pill">AWS (Cloud Practitioner)</span>
+              <span class="skill-pill">Git</span>
+              <span class="skill-pill">GitHub</span>
+              <span class="skill-pill">VS Code</span>
+              <span class="skill-pill">Postman</span>
+              <span class="skill-pill">Figma</span>
+            </div>
+          </div>
+
+          <!-- IoT & Embedded Systems -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+              </div>
+              <h4>IoT & Embedded Systems</h4>
+            </div>
+            <div class="skill-tags-group">
+              <span class="skill-pill">Raspberry Pi</span>
+              <span class="skill-pill">Arduino</span>
+              <span class="skill-pill">Thermal Sensors (DS18B20)</span>
+              <span class="skill-pill">Color Sensors (TCS34725)</span>
+              <span class="skill-pill">Relays & SSRs</span>
+              <span class="skill-pill">Hardware-Software Integration</span>
+            </div>
+          </div>
+
+          <!-- Product & Innovation -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <h4>Product & Innovation</h4>
+            </div>
+            <div class="skill-tags-group">
+              <span class="skill-pill">Design Thinking</span>
+              <span class="skill-pill">Problem Structuring</span>
+              <span class="skill-pill">Rapid Prototyping</span>
+              <span class="skill-pill">Entrepreneurship</span>
+              <span class="skill-pill">Pitching & Storytelling</span>
+              <span class="skill-pill">UN Sustainable Development Goals</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== BEYOND THE CODE / PERSONAL BRAND ==================== -->
+    <section class="section beyond-section" id="beyond">
+      <div class="container">
+        <div class="section-head" style="margin-bottom: 36px;">
+          <p class="section-eyebrow">09 / BEYOND THE CODE</p>
+          <h2 class="section-title">The human behind <span class="accent">the builder.</span></h2>
+          <p class="section-subtitle">
+            Curiosity is not confined to an IDE. A glimpse into the pursuits, perspectives, and energies that inspire my thinking.
+          </p>
+        </div>
+
+        <div class="beyond-grid">
+          <div class="beyond-card">
+            <div class="beyond-icon">🏍️</div>
+            <h4>Motorcycles & Rides</h4>
+            <p>Appreciation for mechanical engineering, open-road clarity, and the focus of solo travel.</p>
+          </div>
+
+          <div class="beyond-card">
+            <div class="beyond-icon">⛰️</div>
+            <h4>Mountains & Travel</h4>
+            <p>Gaining fresh perspective, endurance, and quiet problem reflection away from urban noise.</p>
+          </div>
+
+          <div class="beyond-card">
+            <div class="beyond-icon">🎧</div>
+            <h4>Music & Soundscapes</h4>
+            <p>Creative rhythm and deep focus tracks that accompany late-night prototyping sessions.</p>
+          </div>
+
+          <div class="beyond-card">
+            <div class="beyond-icon">🎬</div>
+            <h4>Visual Storytelling</h4>
+            <p>Appreciation for cinematic direction, narrative arc, and crisp visual communication.</p>
+          </div>
+
+          <div class="beyond-card">
+            <div class="beyond-icon">⚡</div>
+            <h4>Tech Trends & Gadgets</h4>
+            <p>Constantly tracking cutting-edge hardware, embedded breakthroughs, and product shifts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT & FINAL CALL TO ACTION ==================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card-hero">
+          <span class="contact-eyebrow">10 / LET'S BUILD TOGETHER</span>
+          <h2 class="contact-title">Have an idea worth building?</h2>
+          <p class="contact-desc">
+            I'm always interested in connecting with engineers, founders, and mentors who enjoy building meaningful products, exploring intelligent systems, and turning real-world problems into scalable solutions.
+          </p>
+
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:penumudirishik48@gmail.com">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              Email Rishik
+            </a>
+            <button class="btn btn-secondary copy-email-trigger">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              Copy Email Address
+            </button>
+            <a class="btn btn-ghost" style="color: #FFFFFF; border: 1px solid rgba(255, 255, 255, 0.2);" href="assets/Rishik_resume.pdf" download="Rishik_Penumudi_Resume.pdf" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Download Resume (PDF)
+            </a>
+          </div>
+
+          <div>
+            <div class="contact-email-bar">
+              <span>penumudirishik48@gmail.com</span>
+              <span style="color: #64748B;">•</span>
+              <span>Vijayawada, Andhra Pradesh, India</span>
+            </div>
+          </div>
+
+          <div class="contact-social-links">
+            <a class="contact-social-link" href="https://www.linkedin.com/in/penumudi-rishik-3b1b90368/" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <span style="color: rgba(255,255,255,0.2);">/</span>
+            <a class="contact-social-link" href="https://github.com/RishikPenumudi" target="_blank" rel="noopener">GitHub ↗</a>
+            <span style="color: rgba(255,255,255,0.2);">/</span>
+            <a class="contact-social-link" href="https://leetcode.com/u/KLU2400030782/" target="_blank" rel="noopener">LeetCode ↗</a>
+            <span style="color: rgba(255,255,255,0.2);">/</span>
+            <a class="contact-social-link" href="https://www.codechef.com/users/kl2400030782" target="_blank" rel="noopener">CodeChef ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== SITE FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <div class="brand-monogram" style="width: 28px; height: 28px; font-size: 0.75rem;">RP</div>
+        <span style="font-weight: 700; color: var(--text-primary); font-size: 0.875rem;">Rishik Penumudi</span>
+        <span style="color: var(--text-light);">·</span>
+        <span class="footer-copy">Designed with curiosity. Built with purpose.</span>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#sahaj">SAHAJ</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <span class="footer-copy">© <span id="currentYear">2026</span> All rights reserved.</span>
+        <a class="back-to-top" href="#home" aria-label="Back to top">
+          Back to top
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </a>
+      </div>
     </div>
-    <aside class="hero-card">
-      <div class="avatar">RP<span>.</span></div>
-      <p class="card-kicker">CURRENTLY FOCUSED ON</p>
-      <h3>Building useful things.</h3>
-      <div class="focus-list"><span>01 <b>SAHAJ · Natural dye innovation</b></span><span>02 <b>AI & data-driven systems</b></span><span>03 <b>Product development</b></span></div>
-      <div class="hero-badge"><strong>SIH'25</strong><small>National Finalist · Team Zyric</small></div>
-    </aside>
-  </section>
+  </footer>
 
-  <section class="stats wrap">
-    <div><strong>8.75<span>/10</span></strong><small>Current CGPA</small></div>
-    <div><strong>2028</strong><small>Expected Graduation</small></div>
-    <div><strong>SIH'25</strong><small>National Finalist</small></div>
-    <div><strong>120 hrs</strong><small>Celonis BA Training</small></div>
-  </section>
-
-  <section class="section wrap" id="about">
-    <div class="section-heading"><div><p class="eyebrow">01 / ABOUT</p><h2>Curiosity, backed by <span>execution.</span></h2></div><p>Technology matters most when it solves a real problem for a real person.</p></div>
-    <div class="about-grid">
-      <article class="surface about-main"><p class="section-tag">A LITTLE ABOUT ME</p><h3>A CSE student with a builder's mindset.</h3><p>I'm pursuing B.Tech in Computer Science & Engineering with Honors Through Innovation (HTI), expected to graduate in 2028. My interests span software development, data and process analytics, AI-enabled solutions, IoT prototyping and entrepreneurship.</p><p>Through innovation programs, hackathons, internships and project work, I've explored how to understand user needs, define problems, design solutions, build prototypes and communicate ideas clearly.</p><div class="chips"><span>Product thinking</span><span>Design thinking</span><span>Analytical problem solving</span><span>Entrepreneurship</span></div></article>
-      <article class="surface education"><p class="section-tag">EDUCATION</p><h3>B.Tech · Computer Science & Engineering</h3><p>K L University · 2024–2028</p><p class="muted">Honors Through Innovation (HTI)</p><div class="cgpa"><strong>8.75</strong><span>/ 10 CGPA</span></div><hr><p class="section-tag">AREAS I’M EXPLORING</p><ul><li>AI & data analytics</li><li>Product and business analysis</li><li>Full-stack development</li><li>IoT and embedded systems</li></ul></article>
+  <!-- ==================== ACCESSIBLE CASE STUDY MODAL ==================== -->
+  <div class="modal-backdrop" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="modalTitle">Case Study Overview</h3>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal dialog">×</button>
+      </div>
+      <div class="modal-body" id="modalContent">
+        <!-- Injected dynamically via script.js -->
+      </div>
     </div>
-  </section>
+  </div>
 
-  <section class="section wrap" id="projects">
-    <div class="section-heading"><div><p class="eyebrow">02 / SELECTED WORK</p><h2>Projects with <span>purpose.</span></h2></div><p>A selection of prototypes, software projects and concepts. Project status is stated transparently.</p></div>
-    <div class="project-grid">
-      <article class="project-card featured-project">
-        <div class="project-visual sahaj-visual sahaj-photo"><img src="assets/sahaj-primary.jpg" alt="SAHAJ natural dyeing system prototype"><span class="photo-label">TEAM ZYRIC · SAHAJ PROTOTYPE</span></div>
-        <div class="project-body"><p class="project-type">FEATURED · HARDWARE + AI CONCEPT</p><h3>SAHAJ — Smart Automated Heritage Artisan Natural Dyeing System</h3><p>A sustainable natural-dye system exploring automated preparation and dyeing. The current AI direction includes target-colour palette identification, measured plant and water inputs, estimated dye output with prediction error, and process-completion guidance.</p><div class="chips"><span>SIH 2025 Finalist</span><span>Team Zyric</span><span>IoT</span><span>AI-assisted workflow</span><span>3D prototype</span></div><p class="project-note">Prototype and AI-assisted workflow are under development; proposed capabilities are not presented as validated production results.</p><figure class="sahaj-supporting"><img src="assets/sahaj-supporting.png" alt="Additional view of the SAHAJ prototype"><figcaption>SAHAJ prototype — additional project view</figcaption></figure></div>
-      </article>
-      <article class="project-card"><div class="project-visual parking-visual"><b>P</b><span>SMART PARKING</span></div><div class="project-body"><p class="project-type">SOFTWARE · MICROSERVICES</p><h3>Smart Parking Management System</h3><p>Designed a microservices-based parking workflow covering authentication, parking availability, booking and billing with REST APIs and PostgreSQL.</p><div class="chips"><span>Spring Boot</span><span>PostgreSQL</span><span>REST APIs</span></div></div></article>
-      <article class="project-card"><div class="project-visual food-visual"><b>FoodLink</b><span>SURPLUS → COMMUNITY</span></div><div class="project-body"><p class="project-type">PRODUCT CONCEPT</p><h3>FoodLink — Food Waste & Donation Platform</h3><p>A concept connecting surplus-food donors with recipient organizations through food listings, donation requests and coordination workflows.</p><div class="chips"><span>Product design</span><span>Social impact</span></div></div></article>
-      <article class="project-card"><div class="project-visual data-visual"><b>DATA → INSIGHT</b><span>PYTHON · SQL · ANALYTICS</span></div><div class="project-body"><p class="project-type">DATA WORKFLOWS</p><h3>Analytics & Data Pipeline Concepts</h3><p>Explored data ingestion, transformation, storage, KPI monitoring and analysis through stock-market, campus analytics and personal expense workflow concepts.</p><div class="chips"><span>Python</span><span>SQL</span><span>PostgreSQL</span><span>Pandas</span></div></div></article>
-      <article class="project-card"><div class="project-visual city-visual"><b>SMART CITY</b><span>CITIZEN SERVICES</span></div><div class="project-body"><p class="project-type">WEB APPLICATION CONCEPT</p><h3>Vijayawada Smart City Portal</h3><p>A centralized citizen-service portal concept covering public services, complaint management, issue tracking, authentication and dashboards.</p><div class="chips"><span>Web development</span><span>Dashboards</span></div></div></article>
-      <article class="project-card"><div class="project-visual waste-visual"><b>LESS WASTE</b><span>HOSTEL FOOD MONITORING</span></div><div class="project-body"><p class="project-type">ACADEMIC WEB PROTOTYPE</p><h3>Hostel Food Waste Monitoring System</h3><p>A web-based academic prototype for recording meal preparation and consumption, calculating food waste and estimated cost, collecting feedback and showing summaries.</p><div class="chips"><span>HTML/CSS/JS</span><span>Google Apps Script</span><span>Google Sheets</span></div></div></article>
-    </div>
-  </section>
+  <!-- Toast Notification for Copy Actions -->
+  <div class="toast-notice" id="toastNotice" role="alert" aria-live="polite">
+    Email address copied to clipboard!
+  </div>
 
-  <section class="section wrap" id="experience">
-    <div class="section-heading"><div><p class="eyebrow">03 / EXPERIENCE</p><h2>Learning through <span>doing.</span></h2></div><p>Internship and field exposure that strengthened my understanding of processes, people and practical needs.</p></div>
-    <div class="timeline">
-      <article class="timeline-item"><time>APRIL – JUNE 2026 · 8 WEEKS · 120 HOURS</time><h3>Business Analyst Virtual Intern — EduSkills / AICTE</h3><p class="org">Celonis-supported program · Grade O (Outstanding)</p><p>Completed the Business Analyst virtual internship, gaining exposure to process mining, business process analysis, KPI thinking and process-improvement concepts.</p></article>
-      <article class="timeline-item"><time>JUNE 1 – 7, 2025 · 7 DAYS · OFFLINE</time><h3>Social Intern — Smart Village Program</h3><p class="org">Student Activity Centre (SAC), KL University · Village Infrastructure study</p><p>Conducted field research into rural infrastructure needs and local challenges, documented observations and stakeholder feedback, and developed practical insights into community needs and problem identification.</p></article>
-    </div>
-  </section>
-
-
-  <section class="section wrap" id="job-simulations">
-    <div class="section-heading"><div><p class="eyebrow">04 / AI & DATA JOB SIMULATIONS</p><h2>Industry-inspired <span>experience.</span></h2></div><p>Completed virtual job simulations through Forage, applying analytical and AI/ML concepts to business-focused case studies.</p></div>
-    <div class="simulation-grid">
-      <article class="simulation-card">
-        <div class="simulation-top"><span class="simulation-provider">FORAGE · NOV 2026</span><span class="simulation-mark">BA</span></div>
-        <p class="project-type">DATA SCIENCE JOB SIMULATION</p>
-        <h3>British Airways — Data Science</h3>
-        <p>Worked on customer booking behaviour prediction and Heathrow Terminal 3 lounge eligibility modelling through practical data science tasks.</p>
-        <ul><li>Prepared and explored customer booking data</li><li>Built a Random Forest predictive model</li><li>Applied cross-validation and evaluated model performance</li><li>Reviewed feature importance and communicated findings</li></ul>
-        <div class="simulation-result"><strong>79.5% ROC-AUC</strong><span>Customer booking prediction model · test set</span></div>
-        <p class="credential-id">Credential ID: 6ae8679a90367ee6883e30b7</p>
-      </article>
-      <article class="simulation-card">
-        <div class="simulation-top"><span class="simulation-provider">FORAGE · NOV 2026</span><span class="simulation-mark">T</span></div>
-        <p class="project-type">GENAI POWERED DATA ANALYTICS JOB SIMULATION</p>
-        <h3>Tata — GenAI Powered Data Analytics</h3>
-        <p>Explored how data analytics and generative AI can support risk assessment and collections decision-making.</p>
-        <ul><li>Performed exploratory data analysis (EDA)</li><li>Worked on customer risk profiling</li><li>Explored AI-supported delinquency prediction</li><li>Prepared business reporting and data storytelling</li><li>Developed AI-driven collections strategy recommendations</li></ul>
-      </article>
-      <article class="simulation-card">
-        <div class="simulation-top"><span class="simulation-provider">FORAGE · NOV 2026</span><span class="simulation-mark">D</span></div>
-        <p class="project-type">DATA ANALYTICS JOB SIMULATION</p>
-        <h3>Deloitte — Data Analytics</h3>
-        <p>Completed practical, business-oriented data analytics tasks with exposure to data interpretation and forensic technology concepts.</p>
-        <ul><li>Worked through data analytics case tasks</li><li>Practised interpreting data to identify useful insights</li><li>Gained exposure to forensic technology applications</li></ul>
-      </article>
-    </div>
-  </section>
-
-  <section class="section wrap" id="achievements">
-    <div class="section-heading"><div><p class="eyebrow">05 / ACHIEVEMENTS & RECOGNITION</p><h2>Milestones that <span>move me forward.</span></h2></div><p>Innovation, pitching, knowledge sharing, community engagement and continuous learning.</p></div>
-    <div class="achievement-grid">
-      <article class="achievement-card featured-achievement"><span class="achievement-no">01</span><div><p class="project-type">NATIONAL HACKATHON</p><h3>Smart India Hackathon 2025</h3><p>National Finalist with Team Zyric; developed and presented SAHAJ.</p></div></article>
-      <article class="achievement-card"><span class="achievement-no">02</span><div><p class="project-type">BUILDATHON · SHORTLISTED</p><h3>Hack2Skill Startup Buildathon 2026 — Hyderabad City Buildathon</h3><p>Shortlisted with Team Zyric for the Hyderabad City Buildathon, scheduled for 20–21 November 2026. SAHAJ AI is the proposed buildathon direction.</p></div></article>
-      <article class="achievement-card"><span class="achievement-no">03</span><div><p class="project-type">PROTOTYPE SHOWCASE</p><h3>SIH 2026 — KLU Internal Round</h3><p>Presented an upgraded 3D-printed SAHAJ prototype.</p></div></article>
-      <article class="achievement-card"><span class="achievement-no">04</span><div><p class="project-type">KNOWLEDGE SHARING</p><h3>SIH Finalist Experience Sharing</h3><p>Invited as an SIH 2025 finalist to guide SIH 2026 participants on problem selection, PPT preparation, presentations and pitching.</p></div></article>
-      <article class="achievement-card"><span class="achievement-no">05</span><div><p class="project-type">STARTUP PITCH</p><h3>PitchX 2026 — Mumbai</h3><p>Participated in the startup pitch competition and presented SAHAJ.</p></div></article>
-      <article class="achievement-card"><span class="achievement-no">06</span><div><p class="project-type">INNOVATION</p><h3>HTI Hackathon & Project Expo</h3><p>Participated in idea-generation and innovation activities and showcased project work.</p></div></article>
-      <article class="achievement-card"><span class="achievement-no">07</span><div><p class="project-type">STARTUP ECOSYSTEM</p><h3>Ratan Tata Innovation Hub — Mangalagiri</h3><p>Shortlisted for an innovation/startup hub visit.</p></div></article>
-      <article class="achievement-card"><span class="achievement-no">08</span><div><p class="project-type">SCIENCE & INNOVATION</p><h3>Bharatiya Vigyan Sammelan 2025 — Tirupati</h3><p>Participated in the Science & Innovation Expo.</p></div></article>
-      <article class="achievement-card"><span class="achievement-no">09</span><div><p class="project-type">INTERNATIONAL INTERACTION</p><h3>EPICS — Purdue University, USA</h3><p>Showcased SAHAJ and interacted with Dr. William Oakes, Associate Dean & Director of EPICS, during his visit to KLU.</p></div></article>
-      <article class="achievement-card"><span class="achievement-no">10</span><div><p class="project-type">TECHNICAL EVENT</p><h3>OS Kernel Puzzle — SAMYAK 2025</h3><p>Participated in a national-level techno event.</p></div></article>
-      <article class="achievement-card"><span class="achievement-no">11</span><div><p class="project-type">COMMUNITY</p><h3>Safe Life Club — KLSAC</h3><p>Club member.</p></div></article>
-    </div>
-  </section>
-
-  <section class="section wrap" id="skills">
-    <div class="section-heading"><div><p class="eyebrow">06 / TOOLKIT</p><h2>Skills I’m <span>building on.</span></h2></div><p>A growing technical foundation across software, analytics, cloud, hardware and product development.</p></div>
-    <div class="skills-grid">
-      <article class="surface skill-card"><h3>Programming</h3><div class="chips"><span>Python</span><span>C</span><span>Java</span><span>JavaScript</span><span>SQL</span></div></article>
-      <article class="surface skill-card"><h3>Web & Backend</h3><div class="chips"><span>HTML</span><span>CSS</span><span>React</span><span>Node.js</span><span>Spring Boot</span><span>REST APIs</span></div></article>
-      <article class="surface skill-card"><h3>Data & Analytics</h3><div class="chips"><span>PostgreSQL</span><span>MySQL</span><span>Data Analysis</span><span>Process Mining</span><span>KPI Analysis</span></div></article>
-      <article class="surface skill-card"><h3>Cloud, IoT & Hardware</h3><div class="chips"><span>AWS</span><span>Arduino</span><span>Sensors</span><span>Relays</span><span>Pumps & Motors</span><span>Embedded Systems</span></div></article>
-      <article class="surface skill-card"><h3>Product & Innovation</h3><div class="chips"><span>Design Thinking</span><span>Product Ideation</span><span>Prototyping</span><span>Problem Solving</span><span>Entrepreneurship</span></div></article>
-      <article class="surface skill-card"><h3>Tools</h3><div class="chips"><span>Git</span><span>GitHub</span><span>VS Code</span><span>Postman</span><span>Figma</span></div></article>
-    </div>
-  </section>
-
-  <section class="section wrap" id="certifications">
-    <div class="section-heading"><div><p class="eyebrow">07 / CONTINUOUS LEARNING</p><h2>Certifications & <span>credentials.</span></h2></div><p>Selected certifications and program-completion credentials.</p></div>
-    <div class="cert-grid">
-      <div class="cert-item"><b>01</b><span><strong>AWS Certified Cloud Practitioner</strong><small>Amazon Web Services</small></span></div>
-      <div class="cert-item"><b>02</b><span><strong>Celonis Business Analyst Virtual Internship</strong><small>AICTE–EduSkills · Grade O (Outstanding)</small></span></div>
-      <div class="cert-item"><b>03</b><span><strong>Celonis Business Analyst — 120 Hours</strong><small>APSCHE / EduSkills</small></span></div>
-      <div class="cert-item"><b>04</b><span><strong>Cisco Networking Academy — Linux</strong><small>Cisco</small></span></div>
-      <div class="cert-item"><b>05</b><span><strong>Cisco Networking Academy — Python</strong><small>Cisco</small></span></div>
-      <div class="cert-item"><b>06</b><span><strong>Cisco Networking Academy — JavaScript, HTML & CSS</strong><small>Cisco</small></span></div>
-      <div class="cert-item"><b>07</b><span><strong>IBM Machine Learning</strong><small>Coursera</small></span></div>
-      <div class="cert-item"><b>08</b><span><strong>IBM Frontend Development</strong><small>Coursera</small></span></div>
-      <div class="cert-item"><b>09</b><span><strong>Meta Frontend Development</strong><small>Coursera</small></span></div>
-      <div class="cert-item"><b>10</b><span><strong>PostgreSQL Database Management</strong><small>University of Michigan / Coursera</small></span></div>
-      <div class="cert-item"><b>11</b><span><strong>Cambridge Lingua Skills</strong><small>Cambridge</small></span></div>
-      <div class="cert-item"><b>12</b><span><strong>Entrepreneurship Programs</strong><small>Coursera</small></span></div>
-    </div>
-  </section>
-
-  <section class="section wrap contact-section" id="contact">
-    <div class="contact-card"><p class="eyebrow">08 / LET’S CONNECT</p><h2>Have an idea worth <span>building?</span></h2><p>I'm open to learning, collaboration, internships and opportunities to build solutions with meaningful impact.</p><a class="btn primary" href="mailto:penumudirishik48@gmail.com">Email Rishik ↗</a><div class="contact-links"><a href="https://www.linkedin.com/in/penumudi-rishik-3b1b90368/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/RishikPenumudi" target="_blank" rel="noopener">GitHub</a><a href="https://leetcode.com/u/KLU2400030782/" target="_blank" rel="noopener">LeetCode</a><a href="https://www.codechef.com/users/kl2400030782" target="_blank" rel="noopener">CodeChef</a></div><p class="email-line">penumudirishik48@gmail.com · Vijayawada, Andhra Pradesh, India</p></div>
-  </section>
-</main>
-<footer class="footer wrap"><a class="brand" href="#home">RISHIK PENUMUDI</a><span>Designed with curiosity. Built with purpose.</span><a href="#home">Back to top ↑</a></footer>
-<script src="script.js"></script>
+  <!-- JavaScript Interaction Controller -->
+  <script src="script.js"></script>
 </body>
 </html>
